@@ -17,3 +17,8 @@ burger.addEventListener("click", () => {
 //     }
     
 // }
+window.addEventListener("scroll", () => {
+    let backToTop = document.querySelector(".back-to-top");
+    if (window.pageYOffset > 630) backToTop.classList.remove("hidden");
+    else backToTop.classList.add("hidden")
+})
